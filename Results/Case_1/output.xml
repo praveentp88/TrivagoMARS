@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.4.3 on win32)" generated="20180430 16:27:54.624">
+<suite name="Case1" id="s1" source="E:\Trivago\TrivagoMARS\TestCase\case1.robot">
+<test name="Successful Launch" id="s1-t1">
+<kw name="Open Browser To Landing Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:27:54.957">Opening browser 'Chrome' to base url 'http://room5.trivago.com/'.</msg>
+<status status="PASS" endtime="20180430 16:28:22.776" starttime="20180430 16:27:54.956"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180430 16:28:23.903" starttime="20180430 16:28:22.776"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20180430 16:28:23.904" starttime="20180430 16:28:23.903"></status>
+</kw>
+<status status="PASS" endtime="20180430 16:28:23.904" starttime="20180430 16:27:54.955"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+<tag>SanityTest</tag>
+</tags>
+<status status="PASS" endtime="20180430 16:28:23.904" starttime="20180430 16:27:54.954" critical="yes"></status>
+</test>
+<test name="Case1 : Search" id="s1-t2">
+<kw name="Search using location">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=span.room5-icons-search</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:28:23.909">Clicking element 'css=span.room5-icons-search'.</msg>
+<status status="PASS" endtime="20180430 16:28:24.010" starttime="20180430 16:28:23.909"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[@id="ajax-search-input"]</arg>
+<arg>NewYork</arg>
+</arguments>
+<status status="PASS" endtime="20180430 16:28:24.206" starttime="20180430 16:28:24.010"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg level="INFO" html="yes" timestamp="20180430 16:28:24.626">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180430 16:28:24.627" starttime="20180430 16:28:24.206"></status>
+</kw>
+<status status="PASS" endtime="20180430 16:28:24.627" starttime="20180430 16:28:23.908"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg level="INFO" html="yes" timestamp="20180430 16:28:24.932">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180430 16:28:24.932" starttime="20180430 16:28:24.628"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180430 16:28:27.991" starttime="20180430 16:28:24.933"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+</tags>
+<status status="PASS" endtime="20180430 16:28:27.992" starttime="20180430 16:28:23.906" critical="yes"></status>
+</test>
+<doc>This is a sample test for TRIVAGO Challenge</doc>
+<status status="PASS" endtime="20180430 16:28:28.000" starttime="20180430 16:27:54.627"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">RegressionTest</stat>
+<stat pass="1" fail="0">SanityTest</stat>
+</tag>
+<suite>
+<stat name="Case1" pass="2" id="s1" fail="0">Case1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
