@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180430 16:35:51.348" generator="Robot 3.0.4 (Python 3.4.3 on win32)">
+<suite id="s1" source="E:\Trivago\TrivagoMARS\TestCase\case2.robot" name="Case2">
+<test id="s1-t1" name="Successful Launch">
+<kw name="Open Browser To Landing Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:35:51.673">Opening browser 'Chrome' to base url 'http://room5.trivago.com/'.</msg>
+<status endtime="20180430 16:36:08.768" status="PASS" starttime="20180430 16:35:51.673"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status endtime="20180430 16:36:09.883" status="PASS" starttime="20180430 16:36:08.768"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status endtime="20180430 16:36:09.885" status="PASS" starttime="20180430 16:36:09.884"></status>
+</kw>
+<status endtime="20180430 16:36:09.886" status="PASS" starttime="20180430 16:35:51.672"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+<tag>SanityTest</tag>
+</tags>
+<status endtime="20180430 16:36:09.887" status="PASS" starttime="20180430 16:35:51.671" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Case2">
+<kw name="Search using location">
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status endtime="20180430 16:36:09.896" status="PASS" starttime="20180430 16:36:09.895"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="cn-accept-cookie"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:36:09.897">Clicking element 'xpath=//*[@id="cn-accept-cookie"]'.</msg>
+<status endtime="20180430 16:36:10.007" status="PASS" starttime="20180430 16:36:09.897"></status>
+</kw>
+<kw name="Scroll Page To Location">
+<arguments>
+<arg>0</arg>
+<arg>8000</arg>
+</arguments>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>window.scrollTo(${x_location},${y_location})</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:36:10.011">Executing JavaScript:
+window.scrollTo(0,8000)</msg>
+<status endtime="20180430 16:36:10.025" status="PASS" starttime="20180430 16:36:10.010"></status>
+</kw>
+<status endtime="20180430 16:36:10.025" status="PASS" starttime="20180430 16:36:10.008"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[text()= "Contact"]</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:36:10.027">Clicking element 'xpath=//a[text()= "Contact"]'.</msg>
+<status endtime="20180430 16:36:14.015" status="PASS" starttime="20180430 16:36:10.026"></status>
+</kw>
+<status endtime="20180430 16:36:14.016" status="PASS" starttime="20180430 16:36:09.894"></status>
+</kw>
+<kw name="Fill Contacts page">
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[@id='message']</arg>
+<arg>Sample Message from Candidate</arg>
+</arguments>
+<status endtime="20180430 16:36:14.280" status="PASS" starttime="20180430 16:36:14.017"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[@id='full_name']</arg>
+<arg>test</arg>
+</arguments>
+<status endtime="20180430 16:36:14.391" status="PASS" starttime="20180430 16:36:14.280"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[@id='email']</arg>
+<arg>test@test.test</arg>
+</arguments>
+<status endtime="20180430 16:36:14.614" status="PASS" starttime="20180430 16:36:14.392"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[@id='contactform-submit']</arg>
+</arguments>
+<msg level="INFO" timestamp="20180430 16:36:14.617">Clicking element 'xpath=.//*[@id='contactform-submit']'.</msg>
+<status endtime="20180430 16:36:16.762" status="PASS" starttime="20180430 16:36:14.615"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg level="INFO" timestamp="20180430 16:36:17.090" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status endtime="20180430 16:36:17.090" status="PASS" starttime="20180430 16:36:16.762"></status>
+</kw>
+<status endtime="20180430 16:36:17.090" status="PASS" starttime="20180430 16:36:14.016"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status endtime="20180430 16:36:20.170" status="PASS" starttime="20180430 16:36:17.091"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+</tags>
+<status endtime="20180430 16:36:20.171" status="PASS" starttime="20180430 16:36:09.893" critical="yes"></status>
+</test>
+<doc>This is a sample test for TRIVAGO Challenge</doc>
+<status endtime="20180430 16:36:20.173" status="PASS" starttime="20180430 16:35:51.351"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="2">RegressionTest</stat>
+<stat fail="0" pass="1">SanityTest</stat>
+</tag>
+<suite>
+<stat id="s1" name="Case2" fail="0" pass="2">Case2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
