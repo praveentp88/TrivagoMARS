@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180430 00:33:33.215" generator="Robot 3.0.4 (Python 3.4.3 on win32)">
+<suite id="s1" source="E:\Trivago\TrivagoMARS\TestCase\Case1.robot" name="Case1">
+<test id="s1-t1" name="Successful Launch">
+<kw name="Open Browser To Landing Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180430 00:33:33.657" level="INFO">Opening browser 'Chrome' to base url 'http://room5.trivago.com/'.</msg>
+<status status="PASS" starttime="20180430 00:33:33.655" endtime="20180430 00:33:46.927"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20180430 00:33:46.928" endtime="20180430 00:33:48.061"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20180430 00:33:48.062" endtime="20180430 00:33:48.063"></status>
+</kw>
+<status status="PASS" starttime="20180430 00:33:33.654" endtime="20180430 00:33:48.063"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+<tag>SanityTest</tag>
+</tags>
+<status status="PASS" starttime="20180430 00:33:33.651" critical="yes" endtime="20180430 00:33:48.065"></status>
+</test>
+<test id="s1-t2" name="Case1">
+<kw name="Search using location">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=span.room5-icons-search</arg>
+</arguments>
+<msg timestamp="20180430 00:33:48.077" level="INFO">Clicking element 'css=span.room5-icons-search'.</msg>
+<status status="PASS" starttime="20180430 00:33:48.075" endtime="20180430 00:33:48.239"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//*[@id="ajax-search-input"]</arg>
+<arg>NewYork</arg>
+</arguments>
+<status status="PASS" starttime="20180430 00:33:48.239" endtime="20180430 00:33:48.525"></status>
+</kw>
+<status status="PASS" starttime="20180430 00:33:48.072" endtime="20180430 00:33:48.525"></status>
+</kw>
+<kw name="Close Browser" type="teardown" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180430 00:33:48.526" endtime="20180430 00:33:51.608"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+</tags>
+<status status="PASS" starttime="20180430 00:33:48.070" critical="yes" endtime="20180430 00:33:51.609"></status>
+</test>
+<doc>This is a sample test for TRIVAGO Challenge</doc>
+<status status="PASS" starttime="20180430 00:33:33.218" endtime="20180430 00:33:51.612"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">RegressionTest</stat>
+<stat pass="1" fail="0">SanityTest</stat>
+</tag>
+<suite>
+<stat id="s1" name="Case1" pass="2" fail="0">Case1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
