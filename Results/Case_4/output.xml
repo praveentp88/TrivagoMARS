@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180502 19:50:40.569" generator="Robot 3.0.4 (Python 3.4.3 on win32)">
+<suite id="s1" name="Case4" source="E:\Trivago\TrivagoMARS\TestCase\case4.robot">
+<test id="s1-t1" name="Successful Launch">
+<kw name="Open Browser To Landing Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180502 19:50:40.931" level="INFO">Opening browser 'Chrome' to base url 'http://room5.trivago.com/'.</msg>
+<status status="PASS" endtime="20180502 19:51:05.257" starttime="20180502 19:50:40.931"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20180502 19:51:06.384" starttime="20180502 19:51:05.257"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20180502 19:51:06.385" starttime="20180502 19:51:06.384"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="cn-accept-cookie"]</arg>
+</arguments>
+<msg timestamp="20180502 19:51:06.386" level="INFO">Clicking element 'xpath=//*[@id="cn-accept-cookie"]'.</msg>
+<status status="PASS" endtime="20180502 19:51:06.550" starttime="20180502 19:51:06.386"></status>
+</kw>
+<status status="PASS" endtime="20180502 19:51:06.550" starttime="20180502 19:50:40.930"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+<tag>SanityTest</tag>
+</tags>
+<status critical="yes" status="PASS" endtime="20180502 19:51:06.550" starttime="20180502 19:50:40.929"></status>
+</test>
+<test id="s1-t2" name="Navigate to Destination">
+<kw name="Navigate to Destinations">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.nav-icon</arg>
+</arguments>
+<msg timestamp="20180502 19:51:06.602" level="INFO">Clicking element 'css=.nav-icon'.</msg>
+<status status="PASS" endtime="20180502 19:51:06.850" starttime="20180502 19:51:06.602"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//a[@class="di-link term-link" and contains(text(),"USA")]</arg>
+</arguments>
+<msg timestamp="20180502 19:51:06.852" level="INFO">Clicking element 'xpath=//a[@class="di-link term-link" and contains(text(),"USA")]'.</msg>
+<status status="PASS" endtime="20180502 19:51:06.999" starttime="20180502 19:51:06.851"></status>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<doc>Waits until element ``locator`` appears on current page.</doc>
+<arguments>
+<arg>xpath=.//*[@id='articleheader']</arg>
+</arguments>
+<status status="PASS" endtime="20180502 19:51:08.425" starttime="20180502 19:51:06.999"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180502 19:51:09.159" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-57.png"&gt;&lt;img src="selenium-screenshot-57.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180502 19:51:09.160" starttime="20180502 19:51:08.425"></status>
+</kw>
+<status status="PASS" endtime="20180502 19:51:09.160" starttime="20180502 19:51:06.601"></status>
+</kw>
+<kw name="Close Browser" type="teardown" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180502 19:51:12.204" starttime="20180502 19:51:09.161"></status>
+</kw>
+<tags>
+<tag>RegressionTest</tag>
+</tags>
+<status critical="yes" status="PASS" endtime="20180502 19:51:12.205" starttime="20180502 19:51:06.601"></status>
+</test>
+<doc>This is a sample test for TRIVAGO Challenge</doc>
+<status status="PASS" endtime="20180502 19:51:12.207" starttime="20180502 19:50:40.572"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0">Critical Tests</stat>
+<stat pass="2" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0">RegressionTest</stat>
+<stat pass="1" fail="0">SanityTest</stat>
+</tag>
+<suite>
+<stat pass="2" id="s1" name="Case4" fail="0">Case4</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
