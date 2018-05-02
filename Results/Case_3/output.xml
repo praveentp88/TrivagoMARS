@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.4.3 on win32)" generated="20180430 16:38:58.132">
-<suite source="E:\Trivago\TrivagoMARS\TestCase\case3.robot" name="Case3" id="s1">
-<test name="Successful Launch" id="s1-t1">
+<robot generated="20180502 19:52:17.922" generator="Robot 3.0.4 (Python 3.4.3 on win32)">
+<suite id="s1" source="E:\Trivago\TrivagoMARS\TestCase\case3.robot" name="Case3">
+<test id="s1-t1" name="Successful Launch">
 <kw name="Open Browser To Landing Page">
 <kw library="Selenium2Library" name="Open Browser">
 <doc>Opens a new browser instance to the given ``url``.</doc>
@@ -9,37 +9,37 @@
 <arg>${URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20180430 16:38:58.470" level="INFO">Opening browser 'Chrome' to base url 'http://room5.trivago.com/'.</msg>
-<status status="PASS" endtime="20180430 16:39:13.307" starttime="20180430 16:38:58.469"></status>
+<msg level="INFO" timestamp="20180502 19:52:18.231">Opening browser 'Chrome' to base url 'http://room5.trivago.com/'.</msg>
+<status starttime="20180502 19:52:18.231" status="PASS" endtime="20180502 19:52:30.813"></status>
 </kw>
 <kw library="Selenium2Library" name="Maximize Browser Window">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20180430 16:39:14.440" starttime="20180430 16:39:13.307"></status>
+<status starttime="20180502 19:52:30.814" status="PASS" endtime="20180502 19:52:31.962"></status>
 </kw>
 <kw library="Selenium2Library" name="Set Selenium Speed">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20180430 16:39:14.441" starttime="20180430 16:39:14.440"></status>
+<status starttime="20180502 19:52:31.963" status="PASS" endtime="20180502 19:52:31.965"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Element">
 <doc>Click element identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="cn-accept-cookie"]</arg>
 </arguments>
-<msg timestamp="20180430 16:39:14.441" level="INFO">Clicking element 'xpath=//*[@id="cn-accept-cookie"]'.</msg>
-<status status="PASS" endtime="20180430 16:39:14.606" starttime="20180430 16:39:14.441"></status>
+<msg level="INFO" timestamp="20180502 19:52:31.967">Clicking element 'xpath=//*[@id="cn-accept-cookie"]'.</msg>
+<status starttime="20180502 19:52:31.966" status="PASS" endtime="20180502 19:52:32.130"></status>
 </kw>
-<status status="PASS" endtime="20180430 16:39:14.606" starttime="20180430 16:38:58.469"></status>
+<status starttime="20180502 19:52:18.230" status="PASS" endtime="20180502 19:52:32.131"></status>
 </kw>
 <tags>
 <tag>RegressionTest</tag>
 <tag>SanityTest</tag>
 </tags>
-<status status="PASS" endtime="20180430 16:39:14.607" critical="yes" starttime="20180430 16:38:58.467"></status>
+<status starttime="20180502 19:52:18.229" status="PASS" critical="yes" endtime="20180502 19:52:32.132"></status>
 </test>
-<test name="NewsLetter Subscription" id="s1-t2">
+<test id="s1-t2" name="NewsLetter Subscription">
 <kw name="Subscibe to Newsletter">
 <kw library="Selenium2Library" name="Press Key">
 <doc>Simulates user pressing key on element identified by ``locator``.</doc>
@@ -47,42 +47,42 @@
 <arg>xpath=//*[@id="etn_email"]</arg>
 <arg>test@test.test</arg>
 </arguments>
-<status status="PASS" endtime="20180430 16:39:15.193" starttime="20180430 16:39:14.616"></status>
+<status starttime="20180502 19:52:32.138" status="PASS" endtime="20180502 19:52:32.975"></status>
 </kw>
 <kw library="Selenium2Library" name="Select Checkbox">
 <doc>Selects checkbox identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="etn_conf_checkbox_de"]</arg>
 </arguments>
-<msg timestamp="20180430 16:39:15.196" level="INFO">Selecting checkbox 'xpath=//*[@id="etn_conf_checkbox_de"]'.</msg>
-<status status="PASS" endtime="20180430 16:39:15.354" starttime="20180430 16:39:15.194"></status>
+<msg level="INFO" timestamp="20180502 19:52:32.977">Selecting checkbox 'xpath=//*[@id="etn_conf_checkbox_de"]'.</msg>
+<status starttime="20180502 19:52:32.976" status="PASS" endtime="20180502 19:52:33.121"></status>
 </kw>
 <kw library="Selenium2Library" name="Click Button">
 <doc>Clicks button identified by ``locator``.</doc>
 <arguments>
 <arg>xpath=//*[@id="static-form"]/div[3]/button</arg>
 </arguments>
-<msg timestamp="20180430 16:39:15.355" level="INFO">Clicking button 'xpath=//*[@id="static-form"]/div[3]/button'.</msg>
-<status status="PASS" endtime="20180430 16:39:15.567" starttime="20180430 16:39:15.354"></status>
+<msg level="INFO" timestamp="20180502 19:52:33.122">Clicking button 'xpath=//*[@id="static-form"]/div[3]/button'.</msg>
+<status starttime="20180502 19:52:33.122" status="PASS" endtime="20180502 19:52:33.299"></status>
 </kw>
 <kw library="Selenium2Library" name="Capture Page Screenshot">
 <doc>Takes screenshot of the current page and embeds it into log file.</doc>
-<msg timestamp="20180430 16:39:16.041" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20180430 16:39:16.041" starttime="20180430 16:39:15.567"></status>
+<msg level="INFO" html="yes" timestamp="20180502 19:52:33.845">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-58.png"&gt;&lt;img src="selenium-screenshot-58.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status starttime="20180502 19:52:33.300" status="PASS" endtime="20180502 19:52:33.845"></status>
 </kw>
-<status status="PASS" endtime="20180430 16:39:16.041" starttime="20180430 16:39:14.615"></status>
+<status starttime="20180502 19:52:32.137" status="PASS" endtime="20180502 19:52:33.846"></status>
 </kw>
-<kw library="Selenium2Library" type="teardown" name="Close Browser">
+<kw type="teardown" library="Selenium2Library" name="Close Browser">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20180430 16:39:19.090" starttime="20180430 16:39:16.042"></status>
+<status starttime="20180502 19:52:33.847" status="PASS" endtime="20180502 19:52:38.121"></status>
 </kw>
 <tags>
 <tag>RegressionTest</tag>
 </tags>
-<status status="PASS" endtime="20180430 16:39:19.091" critical="yes" starttime="20180430 16:39:14.612"></status>
+<status starttime="20180502 19:52:32.135" status="PASS" critical="yes" endtime="20180502 19:52:38.122"></status>
 </test>
 <doc>This is a sample test for TRIVAGO Challenge</doc>
-<status status="PASS" endtime="20180430 16:39:19.093" starttime="20180430 16:38:58.135"></status>
+<status starttime="20180502 19:52:17.925" status="PASS" endtime="20180502 19:52:38.125"></status>
 </suite>
 <statistics>
 <total>
@@ -94,7 +94,7 @@
 <stat fail="0" pass="1">SanityTest</stat>
 </tag>
 <suite>
-<stat name="Case3" fail="0" id="s1" pass="2">Case3</stat>
+<stat id="s1" name="Case3" fail="0" pass="2">Case3</stat>
 </suite>
 </statistics>
 <errors>
